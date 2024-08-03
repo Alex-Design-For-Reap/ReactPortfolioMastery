@@ -1,32 +1,38 @@
 import React from 'react';
-import { NavLink, useLocation  } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navigation() {
-  const location = useLocation().pathname;
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink exact to="/" className={location === '/' ? 'nav-active' : ''}
-          >Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about-me" className={location === '/about-me' ? 'nav-active' : ''}
-          >About Me</NavLink>
-        </li>
-        <li>
-          <NavLink to="/portfolio" className={location === '/portfolio' ? 'nav-active' : ''}
-          >Portfolio</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className={location === '/contact' ? 'nav-active' : ''}
-          >Contact</NavLink>
-        </li>
-        <li>
-          <NavLink to="/resume" className={location === '/resume' ? 'nav-active' : ''}
-          >Resume</NavLink>
-        </li>
-      </ul>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <NavLink exact to="/" className="nav-link" activeClassName="nav-active">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/about-me" className="nav-link" activeClassName="nav-active">
+              About Me
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/portfolio" className="nav-link" activeClassName="nav-active">
+              Portfolio
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/contact" className="nav-link" activeClassName="nav-active">
+              Contact
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/resume" className="nav-link" activeClassName="nav-active">
+              Resume
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

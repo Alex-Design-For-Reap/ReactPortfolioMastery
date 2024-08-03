@@ -16,9 +16,11 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <div className="projects">
+      <div className="row">
         {projects.map((project, index) => (
-          <Project key={index} {...project} />
+          <div className="col-md-6 mb-3" key={index}>
+            <Project {...project} />
+          </div>
         ))}
       </div>
     </section>
@@ -26,6 +28,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
 
 
 // import React from 'react';

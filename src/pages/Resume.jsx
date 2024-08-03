@@ -4,10 +4,10 @@ const Resume = () => {
   return (
     <section id="resume">
       <h2>Resume</h2>
-      <a href="/path/to/your/resume.pdf" download>Download Resume</a>
-      <ul>
-        <li>Seasoned Designer</li>
-        <li>Fullstack Developer</li>
+      <a href="/path/to/your/resume.pdf" download className="btn btn-primary mb-3">Download Resume</a>
+      <ul className="list-group">
+        <li className="list-group-item">Seasoned Designer</li>
+        <li className="list-group-item">Fullstack Developer</li>
         {/* Add more proficiencies here */}
       </ul>
     </section>

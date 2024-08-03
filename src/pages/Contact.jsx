@@ -25,14 +25,14 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
       <p>
         Please fill out the form below to contact me. I will get back to you as
         soon as possible.
       </p>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">Name:</label>
           <input
             type="text"
             id="name"
@@ -40,11 +40,12 @@ const Contact = () => {
             value={formState.name}
             onChange={handleChange}
             onBlur={handleBlur}
+            className="form-control"
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <div className="text-danger">{errors.name}</div>}
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email:</label>
           <input
             type="email"
             id="email"
@@ -52,21 +53,23 @@ const Contact = () => {
             value={formState.email}
             onChange={handleChange}
             onBlur={handleBlur}
+            className="form-control"
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.email && <div className="text-danger">{errors.email}</div>}
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        <div className="mb-3">
+          <label htmlFor="message" className="form-label">Message:</label>
           <textarea
             id="message"
             name="message"
             value={formState.message}
             onChange={handleChange}
             onBlur={handleBlur}
+            className="form-control"
           />
-          {errors.message && <p>{errors.message}</p>}
+          {errors.message && <div className="text-danger">{errors.message}</div>}
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     </section>
   );
