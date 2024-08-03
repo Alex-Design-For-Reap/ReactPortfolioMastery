@@ -1,116 +1,105 @@
-/* index.css */
+/* custom-bootstrap.css */
 
-/* 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Light Mode Colors */
+:root {
+  --primary: #6200ee; /* Primary color */
+  --primary-variant: #3700b3; /* Primary variant */
+  --secondary: #03dac6; /* Secondary color */
+  --secondary-variant: #018786; /* Secondary variant */
+  --background: #ffffff; /* Background color */
+  --surface: #ffffff; /* Surface color */
+  --error: #b00020; /* Error color */
+  --on-primary: #ffffff; /* Text color on primary color */
+  --on-secondary: #000000; /* Text color on secondary color */
+  --on-background: #000000; /* Text color on background color */
+  --on-surface: #000000; /* Text color on surface color */
+  --on-error: #ffffff; /* Text color on error color */
 }
 
-header, footer {
-  background-color: #333;
-  color: #1f9b92;
-  padding: 2em;
+/* Dark Mode Colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #bb86fc; /* Primary color */
+    --primary-variant: #3700b3; /* Primary variant */
+    --secondary: #04a091; /* Secondary color */
+    --secondary-variant: #03dac6; /* Secondary variant */
+    --background: #121212; /* Background color */
+    --surface: #121212; /* Surface color */
+    --error: #cf6679; /* Error color */
+    --on-primary: #000000; /* Text color on primary color */
+    --on-secondary: #000000; /* Text color on secondary color */
+    --on-background: #ffffff; /* Text color on background color */
+    --on-surface: #ffffff; /* Text color on surface color */
+    --on-error: #000000; /* Text color on error color */
+  }
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
+/* Override Bootstrap colors */
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
-nav li {
-  margin-right: 1em;
+.text-primary {
+  color: var(--primary) !important;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
+.bg-secondary {
+  background-color: var(--secondary) !important;
 }
 
-nav a.nav-active {
-  font-weight: bold;
+.text-secondary {
+  color: var(--secondary) !important;
 }
 
-section {
-  padding: 2em;
+.bg-success {
+  background-color: var(--primary-variant) !important;
 }
 
-#home nav ul {
-  display: block;
+.text-success {
+  color: var(--primary-variant) !important;
 }
 
-#home nav li {
-  margin-bottom: 1em;
+.bg-danger {
+  background-color: var(--error) !important;
 }
 
-#home nav a {
-  font-size: 1.2em;
+.text-danger {
+  color: var(--error) !important;
 }
 
-#error {
-  text-align: center;
+.bg-warning {
+  background-color: var(--secondary-variant) !important;
 }
 
-#error a {
-  color: #007bff;
-  text-decoration: none;
+.text-warning {
+  color: var(--secondary-variant) !important;
 }
 
-.project a {
-  text-decoration: none;
-  background-color: #333;
-  color: #ffffff;
-  padding: 1em;
-  display: inline-block;
-  margin: 1em 1em 1em 0em;
-  border-radius: 8px;
+.bg-info {
+  background-color: var(--secondary) !important;
 }
 
-.project a:hover {
-  background-color: #484848;
+.text-info {
+  color: var(--secondary) !important;
 }
 
-.project {
-  border: 1px solid #ddd;
-  margin-bottom: 1em;
-  padding: 1em;
+.bg-light {
+  background-color: var(--background) !important;
 }
 
-.project img {
-  max-width: 100%;
-  object-fit: cover;
+.text-light {
+  color: var(--background) !important;
 }
 
-form div {
-  margin-bottom: 1em;
+.bg-dark {
+  background-color: var(--surface) !important;
 }
 
-form p {
-  color: red;
+.text-dark {
+  color: var(--surface) !important;
 }
 
-#about-me img {
-  max-width: 16%;
-  object-fit: cover;
-  border-radius: 100%;
+.about-img
+{
+  width: 24%;
 }
-
-#github-repos ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#github-repos li {
-  margin-bottom: 1em;
-}
-
-#github-repos a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-#github-repos p {
-  margin: 0.5em 0 0;
-} */
