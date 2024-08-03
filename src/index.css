@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,60 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.nav-active {
+  font-weight: bold;
+}
+
+section {
+  padding: 2em;
+}
+
+.project {
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+form p {
+  color: red;
+}
+

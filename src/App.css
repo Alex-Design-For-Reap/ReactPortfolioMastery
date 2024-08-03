@@ -1,42 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
+header, footer {
+  background-color: #333;
+  color: #1f9b92;
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.nav-active {
+  font-weight: bold;
+}
+
+section {
+  padding: 2em;
+}
+
+#home nav ul {
+  display: block;
+}
+
+#home nav li {
+  margin-bottom: 1em;
+}
+
+#home nav a {
+  font-size: 1.2em;
+}
+
+#error {
+  text-align: center;
+}
+
+#error a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project a {
+  text-decoration: none;
+  background-color: #333;
+  color: #ffffff;
+  padding: 1em;
+  display: inline-block;
+  margin: 1em 1em 1em 0em;
+  border-radius: 8px;
+}
+
+.project a:hover {
+  background-color: #484848;
+}
+
+.project {
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.project img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+form p {
+  color: red;
+}
+
+#about-me img {
+  max-width: 16%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+#github-repos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#github-repos li {
+  margin-bottom: 1em;
+}
+
+#github-repos a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#github-repos p {
+  margin: 0.5em 0 0;
 }
