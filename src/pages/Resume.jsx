@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
+import myResume from '../assets/myResume.pdf';
 
 
 const Resume = () => {
@@ -8,7 +9,7 @@ const Resume = () => {
     <section id="resume">
       <Container>
         <h2 className='m-4'>Resume</h2>
-        <Button href='src/assets/Alex Da Silva resume.pdf' className='m-4' variant='info'>Download Resume</Button>
+        <Button href={myResume} className='m-4' variant='info'>Download Resume</Button>
         <Button href='/GitHubRepos' variant='outline-primary'>GitHub Repos</Button>
       </Container>
     </section>

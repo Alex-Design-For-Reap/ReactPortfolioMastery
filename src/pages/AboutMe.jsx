@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import myImage from '../assets/images/Alex-da-silva.jpeg';
 
 const AboutMe = () => {
   return (
@@ -9,7 +10,7 @@ const AboutMe = () => {
       <section id="about-me">
         <h2 className='m-4'>About Me</h2>
         <div className='container-sm'>
-          <img src="src/assets/images/Alex-da-silva.jpeg" alt="Alex Da Silva" className="img-fluid img-thumbnail about-img" />
+          <img src={myImage} alt="Alex Da Silva" className="img-fluid img-thumbnail about-img" />
         </div>
         <p className='m-4'>I'm an end-to-end seasoned Designer with over a decade of expertise in product, service, and UI/UX design. I am skilled in engaging with cross-functional teams, conducting user research, and designing innovative solutions that balance usability, feasibility, and viability. I excel at leveraging human-centred design principles to create solutions that not only meet user needs but also align with business goals and technical constraints.</p>
       </section>

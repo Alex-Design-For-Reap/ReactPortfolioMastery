@@ -2,6 +2,9 @@ import React from 'react';
 import Project from '../components/Project';
 import { Button } from 'react-bootstrap';
 import fetchFeeder from '../assets/images/fetchfeeder.png';
+import weatherDashboard from '../assets/images/Current-weather-forecast.png';
+import mvcBlogPost from '../assets/images/Blog-post-portfolio.png';
+import noteTaker from '../assets/images/Note-taker-portfolio.png';
 
 const projects = [
   {
@@ -13,21 +16,21 @@ const projects = [
   },
   {
     title: 'Weather Dashboard',
-    image: '/src/assets/images/Current-weather-forecast.png',
+    image: weatherDashboard,
     description: 'A weather dashboard that allows users to search for a city and see the current weather as well as a 5-day forecast.',
     deployedLink: 'https://weather-dashboard-56h1.onrender.com/',
     githubLink: 'https://github.com/Alex-Design-For-Reap/Weather-Dashboard'
   },
   {
     title: 'MCV Blog Post',
-    image: '/src/assets/images/Blog-post-portfolio.png',
+    image: mvcBlogPost,
     description: 'A blog post app that allows users to create, edit, and delete blog posts.',
     deployedLink: 'https://mvc-blog-post.onrender.com/',
     githubLink: 'https://github.com/Alex-Design-For-Reap/MVC-Blog-Post'
   },
   {
   title: 'Note Taker Express.js',
-  image: '/src/assets/images/Note-taker-portfolio.png',
+  image: noteTaker,
   description: 'A Note taker app that allows users to write, save, and delete notes.',
   deployedLink: 'https://note-taker-express-js-j2ds.onrender.com/',
   githubLink: 'https://github.com/Alex-Design-For-Reap/note-taker-express-js'
