@@ -112,6 +112,10 @@ Add your environment variables in the Netlify dashboard under Site Settings > Bu
 
 ![alt text](src/assets/images/app-resume-page.png)
 
+### GitHub API to fetch repositories information from GitHub Account
+
+![alt text](src/assets/images/app-githubrepo.png)
+
 ### Light Mode
 
 ![alt text](src/assets/images/app-light-mode.png)
