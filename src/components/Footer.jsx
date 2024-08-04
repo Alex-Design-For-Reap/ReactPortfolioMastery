@@ -7,10 +7,10 @@ const Footer = () => {
         <p className='m-4 h5'>Connect with me:</p>
         <ul className="list-inline">
           <li className="list-inline-item">
-            <a href="https://github.com/Alex-Design-For-Reap">GitHub</a>
+            <a href="https://github.com/Alex-Design-For-Reap" target='_blank'>GitHub</a>
           </li>
           <li className="list-inline-item">
-            <a href="https://www.linkedin.com/in/alex-da-silva/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/alex-da-silva/" target='_blank'>LinkedIn</a>
           </li>
         </ul>
       </div>

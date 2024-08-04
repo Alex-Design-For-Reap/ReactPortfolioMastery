@@ -9,7 +9,7 @@ const Resume = () => {
     <section id="resume">
       <Container>
         <h2 className='m-4'>Resume</h2>
-        <Button href={myResume} className='m-4' variant='info'>Download Resume</Button>
+        <Button href={myResume} target='_blank' className='m-4' variant='info'>Download Resume</Button>
         <Button href='/GitHubRepos' variant='outline-primary'>GitHub Repos</Button>
       </Container>
     </section>
