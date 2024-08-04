@@ -28,8 +28,15 @@ const Contact = () => {
       <h2>Contact</h2>
       <p>
         Please fill out the form below to contact me. I will get back to you as
-        soon as possible.
+        soon as possible or contact me through email or phone.
       </p>
+      <a href="mailto:s.alexsilva@gmail.com" target='_blank'>
+      s.alexsilva@gmail.com
+      </a>
+      <p>
+        0432 244 117
+      </p>
+
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name:</label>
