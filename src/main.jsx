@@ -2,7 +2,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/App.css';
 
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -17,6 +16,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Error from './pages/Error';
+import GitHubRepos from './pages/GitHubRepos';
 
 const router = createBrowserRouter ([
   {
@@ -43,6 +43,10 @@ const router = createBrowserRouter ([
       {
         path: 'Resume',
         element: <Resume />
+      },
+      {
+        path: 'GitHubRepos',
+        element: <GitHubRepos />
       },
     ]
   }

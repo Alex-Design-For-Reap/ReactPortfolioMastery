@@ -5,12 +5,15 @@ const GitHubRepos = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const githubApiKey = import.meta.env.VITE_GITHUB_API_KEY;
+  const githubApiUrl = import.meta.env.VITE_GITHUB_API_URL;
+
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/Alex-Design-For-Reap/repos', {
+        const response = await fetch( githubApiUrl, { // Replace 'URL key' with your GitHub personal access token
           headers: {
-            Authorization: `token key`, // Replace 'key' with your GitHub personal access token
+            Authorization: `token ${githubApiKey}`, // Replace 'API key' with your GitHub personal access token
           }
         });
         if (!response.ok) {
@@ -26,7 +29,7 @@ const GitHubRepos = () => {
     };
 
     fetchRepos();
-  }, []);
+  }, [githubApiKey]);
 
   if (loading) {
     return <div>Loading...</div>;

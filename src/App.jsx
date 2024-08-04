@@ -1,5 +1,4 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import '../src/App.css';
+
 // Bringing in the required import from 'react-router-dom'
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
