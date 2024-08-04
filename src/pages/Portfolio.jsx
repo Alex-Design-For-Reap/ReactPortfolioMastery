@@ -1,11 +1,12 @@
 import React from 'react';
 import Project from '../components/Project';
 import { Button } from 'react-bootstrap';
+import fetchFeeder from '../assets/images/fetchfeeder.png';
 
 const projects = [
   {
     title: 'Fetch Feeder Dog Tracker',
-    image: './src/assets/images/fetchfeeder.png',
+    image: fetchFeeder,
     description: 'Fetch Feeder is an innovative dog tracker app designed to help dog owners effortlessly track their dogs diet and health.',
     deployedLink: 'https://fetch-feeder-1.onrender.com/',
     githubLink: 'https://github.com/Alex-Design-For-Reap/Fetch-Feeder-Dog-Tracker'
